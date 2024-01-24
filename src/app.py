@@ -112,12 +112,10 @@ sicily_wordcloud = './assets/sicily_wordcloud.png'
     
 # The app layout
 app.layout = html.Div(children=[
-    html.H1(children='The Destination Dictionary', style={'textAlign': 'center', 'margin-top':'5%'}),
+    html.H1(children='DestinationPredict', style={'textAlign': 'center', 'margin-top':'5%'}),
 
-    html.H5(children='Created by: Tia Plagata | tiaplagata@gmail.com',
-             style={'textAlign': 'center', 'color': '#436783'}),
 
-    html.H4(children='Not sure where to travel? Use this machine learning algorithm to find your perfect destination in just a few words.',
+    html.H4(children='Not sure where to travel? Use this recommender webapp to find your perfect destination in just a few words.',
             style={'textAlign': 'center'}),
     
     html.Br(),
@@ -142,7 +140,7 @@ app.layout = html.Div(children=[
     html.H5(children='Methodology', style={'margin-left':'10%',
                                             'margin-right':'10%'}),
     
-    html.Div(children="This machine learning algorithm predicts your perfect destination based on natural language processing and learning from over 28,000 text data points indicating attractions in 12 different cities from TripAdvisor's list of Traveler's Choice destinations for Popular World Destinations 2020.",
+    html.Div(children="This machine learning algorithm predicts your perfect destination based on natural language processing and learning from over 28,000 text data points indicating attractions in 12 different cities from TripAdvisor's list of Traveler's Choice destinations for Popular World Destinations ",
              style={'margin-left':'10%', 'margin-right':'10%'}),
 
     html.Br(),
@@ -153,9 +151,6 @@ app.layout = html.Div(children=[
 
     html.Br(),
 
-    dcc.Link('See my full project repo here!',
-            href='https://github.com/tiaplagata/capstone-project',
-            style={'margin-left':'10%', 'margin-right':'10%'})
     
 ])
     
